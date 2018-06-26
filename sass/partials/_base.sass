@@ -1,0 +1,52 @@
+*
+  margin: 0
+  padding: 0
+  line-height: 1.8rem
+  box-sizing: border-box
+
+html
+  font-size: 16px
+
+body
+  +box_wrap-full
+  +box_no_cush
+  background: #333
+  font-family: 'Ubuntu', Merriweather, Cormorant
+
+.wrapper__page
+  +grid__col--one
+  padding-top: 10vh
+
+.heading__wrapper
+  grid-column: 1/2
+  @media (min-width: 600px)
+    grid-column: 1/5
+
+
+.title__font
+  +font__heading--main
+  text-align: center
+  color: $clr__light
+
+main
+  +grid_media_four
+  +section__margin--bottom
+  color: #333
+  background: #c2c2c2
+  div
+    +box_wrap-full
+    +box__margin--bottom
+    +box__padding
+    border-bottom: 1px solid #f9f9f9
+    &:nth-child(4)
+      margin-bottom: 0
+    @media (min-width: 600px)
+      min-height: 50vh
+      margin: 0
+
+.box__footer
+  +grid__col--one
+  +box__margin--bottom
+  p
+    color: $clr__light
+    text-align: center
