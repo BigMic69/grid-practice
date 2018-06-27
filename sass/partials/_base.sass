@@ -8,16 +8,16 @@ html
   font-size: 16px
 
 body
-  +box_wrap-full
+  +box__full
   +box_no_cush
-  background: #333
+  +clr__combo--primary
   font-family: 'Ubuntu', Merriweather, Cormorant
 
-.wrapper__page
+.page__wrap
   +grid__col--one
   padding-top: 10vh
 
-.heading__wrapper
+.head__wrap
   grid-column: 1/2
   @media (min-width: 600px)
     grid-column: 1/5
@@ -28,25 +28,39 @@ body
   text-align: center
   color: $clr__light
 
-main
-  +grid_media_four
-  +section__margin--bottom
-  color: #333
-  background: #c2c2c2
-  div
-    +box_wrap-full
-    +box__margin--bottom
-    +box__padding
-    border-bottom: 1px solid #f9f9f9
-    &:nth-child(4)
-      margin-bottom: 0
-    @media (min-width: 600px)
-      min-height: 50vh
-      margin: 0
+.box__grid--media
+  +grid__media--four
+  +section__margin-bottom
+  +clr__combo--inverse
+
+.box__wrap
+  +box__full
+  +box__margin-bottom
+
+.box__list
+  // +box__full
+  // +box__margin-bottom
+  +box__padding
+  border-bottom: 1px solid $clr__dark
+  &:last-child
+    margin-bottom: 0
+  @media (min-width: 600px)
+    min-height: 50vh
+    margin: 0
+    text-align: left
+
+.box__title
+  +font__heading--two
+  padding: 5px 10px
+  background: #e8e8e8
 
 .box__footer
   +grid__col--one
-  +box__margin--bottom
-  p
-    color: $clr__light
-    text-align: center
+  +box__margin-bottom
+  +clr__combo--primary
+
+.box__text--light
+  +clr__combo--primary
+
+.box__text--dark
+  +clr__combo--inverse
