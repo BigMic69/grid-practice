@@ -8,59 +8,43 @@ html
   font-size: 16px
 
 body
-  +box__full
-  +box_no_cush
+  position: relative
+  +page__full--no-cush
   +clr__combo--primary
   font-family: 'Ubuntu', Merriweather, Cormorant
 
-.page__wrap
-  +grid__col--one
-  padding-top: 10vh
 
-.head__wrap
-  grid-column: 1/2
-  @media (min-width: 600px)
-    grid-column: 1/5
+// HEADINGS ---------->>
+.heading__one
+  +heading__one
+
+.heading__two
+  +heading__two
 
 
-.title__font
-  +font__heading--main
-  text-align: center
-  color: $clr__light
 
-.box__grid--media
-  +grid__media--four
-  +section__margin-bottom
-  +clr__combo--inverse
+// WRAPPERS ---------->>
+.wrap__page
+  +page__full--cush
+  padding-top: 60px
 
-.box__wrap
-  +box__full
-  +box__margin-bottom
-
-.box__list
-  // +box__full
-  // +box__margin-bottom
-  +box__padding
-  border-bottom: 1px solid $clr__dark
-  &:last-child
-    margin-bottom: 0
-  @media (min-width: 600px)
-    min-height: 50vh
-    margin: 0
-    text-align: left
-
-.box__title
-  +font__heading--two
-  padding: 5px 10px
-  background: #e8e8e8
-
-.box__footer
-  +grid__col--one
-  +box__margin-bottom
+.wrap__copyright
+  +page__full--cush
+  +box__fixed--bottom
   +clr__combo--primary
 
-.box__text--light
-  +clr__combo--primary
 
-.box__text--dark
+
+// GRID ---------->>
+.grid__wrap
+  +grid__media--lg
+
+.grid__box
+  +column__flex
   +clr__combo--inverse
+
+
+
+// TEXT AND FONTS ---------->>
+.text__align--media
+  +text__align--media

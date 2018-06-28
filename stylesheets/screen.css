@@ -1,21 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Cormorant+Infant|Merriweather|Ubuntu");
-/* line 19, ../sass/toolbox/_fonts.sass */
-p {
-  font-size: 0.8rem;
-}
-@media (min-width: 600px) {
-  /* line 19, ../sass/toolbox/_fonts.sass */
-  p {
-    font-size: 1rem;
-  }
-}
-@media (min-width: 900px) {
-  /* line 19, ../sass/toolbox/_fonts.sass */
-  p {
-    font-size: 1.2rem;
-  }
-}
-
 /* line 5, ../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -81,6 +64,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+/* line 4, ../sass/toolbox/_fonts.sass */
+p {
+  font-size: 0.8rem;
+}
+@media (min-width: 600px) {
+  /* line 4, ../sass/toolbox/_fonts.sass */
+  p {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 900px) {
+  /* line 4, ../sass/toolbox/_fonts.sass */
+  p {
+    font-size: 1.2rem;
+  }
+}
+
 /* line 1, ../sass/partials/_base.sass */
 * {
   margin: 0;
@@ -96,139 +96,112 @@ html {
 
 /* line 10, ../sass/partials/_base.sass */
 body {
+  position: relative;
   width: 100%;
   height: auto;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   color: #f9f9f9;
   background: #333;
   font-family: "Ubuntu", Merriweather, Cormorant;
 }
 
-/* line 16, ../sass/partials/_base.sass */
-.page__wrap {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  padding-top: 10vh;
-}
-
-/* line 20, ../sass/partials/_base.sass */
-.head__wrap {
-  grid-column: 1/2;
+/* line 18, ../sass/partials/_base.sass */
+.heading__one {
+  font-size: 1.8rem;
+  margin-bottom: 5vh;
 }
 @media (min-width: 600px) {
-  /* line 20, ../sass/partials/_base.sass */
-  .head__wrap {
-    grid-column: 1/5;
-  }
-}
-
-/* line 26, ../sass/partials/_base.sass */
-.title__font {
-  font-size: 2rem;
-  margin-bottom: 3vh;
-  text-align: center;
-  color: #f9f9f9;
-}
-@media (min-width: 600px) {
-  /* line 26, ../sass/partials/_base.sass */
-  .title__font {
+  /* line 18, ../sass/partials/_base.sass */
+  .heading__one {
     font-size: 2.5rem;
   }
 }
 @media (min-width: 900px) {
-  /* line 26, ../sass/partials/_base.sass */
-  .title__font {
+  /* line 18, ../sass/partials/_base.sass */
+  .heading__one {
     font-size: 3rem;
   }
 }
 
-/* line 31, ../sass/partials/_base.sass */
-.box__grid--media {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  margin-bottom: 40px;
-  color: #333;
-  background: #f9f9f9;
-}
-@media (min-width: 600px) {
-  /* line 31, ../sass/partials/_base.sass */
-  .box__grid--media {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (min-width: 900px) {
-  /* line 31, ../sass/partials/_base.sass */
-  .box__grid--media {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-/* line 36, ../sass/partials/_base.sass */
-.box__wrap {
-  width: 100%;
-  height: auto;
-  margin-bottom: 0 auto 20px;
-}
-
-/* line 40, ../sass/partials/_base.sass */
-.box__list {
-  padding: 0.8rem;
-  border-bottom: 1px solid #333;
-}
-/* line 45, ../sass/partials/_base.sass */
-.box__list:last-child {
-  margin-bottom: 0;
-}
-@media (min-width: 600px) {
-  /* line 40, ../sass/partials/_base.sass */
-  .box__list {
-    min-height: 50vh;
-    margin: 0;
-    text-align: left;
-  }
-}
-
-/* line 52, ../sass/partials/_base.sass */
-.box__title {
+/* line 21, ../sass/partials/_base.sass */
+.heading__two {
   font-size: 1.3rem;
   margin-bottom: 3vh;
-  padding: 5px 10px;
-  background: #e8e8e8;
 }
 @media (min-width: 600px) {
-  /* line 52, ../sass/partials/_base.sass */
-  .box__title {
+  /* line 21, ../sass/partials/_base.sass */
+  .heading__two {
     font-size: 1.8rem;
   }
 }
 @media (min-width: 900px) {
-  /* line 52, ../sass/partials/_base.sass */
-  .box__title {
+  /* line 21, ../sass/partials/_base.sass */
+  .heading__two {
     font-size: 2.3rem;
   }
 }
 
-/* line 57, ../sass/partials/_base.sass */
-.box__footer {
+/* line 27, ../sass/partials/_base.sass */
+.wrap__page {
+  width: 96%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 60px;
+}
+
+/* line 31, ../sass/partials/_base.sass */
+.wrap__copyright {
+  width: 96%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  position: fixed;
+  bottom: 0;
+  padding: 20px 0;
+  color: #f9f9f9;
+  background: #333;
+}
+
+/* line 39, ../sass/partials/_base.sass */
+.grid__wrap {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  margin-bottom: 0 auto 20px;
-  color: #f9f9f9;
-  background: #333;
+  grid-gap: 10px;
+  margin-bottom: 30px;
+}
+@media (min-width: 600px) {
+  /* line 39, ../sass/partials/_base.sass */
+  .grid__wrap {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 900px) {
+  /* line 39, ../sass/partials/_base.sass */
+  .grid__wrap {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
-/* line 62, ../sass/partials/_base.sass */
-.box__text--light {
-  color: #f9f9f9;
-  background: #333;
-}
-
-/* line 65, ../sass/partials/_base.sass */
-.box__text--dark {
+/* line 42, ../sass/partials/_base.sass */
+.grid__box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 6vh;
+  padding: 10px 5px;
   color: #333;
   background: #f9f9f9;
+}
+
+/* line 49, ../sass/partials/_base.sass */
+.text__align--media {
+  text-align: center;
+}
+@media (min-width: 600) {
+  /* line 49, ../sass/partials/_base.sass */
+  .text__align--media {
+    text-align: left;
+  }
 }
