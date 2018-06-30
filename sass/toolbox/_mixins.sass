@@ -1,12 +1,12 @@
 @import "compass/reset"
 
-=page__full--cush
+=box__full--cush
   width: 96%
   height: auto
   margin: 0 auto
   padding: 0
 
-=page__full--no-cush
+=box__full--no-cush
   width: 100%
   height: auto
   margin: 0 auto
@@ -15,14 +15,24 @@
 =box__fixed--bottom
   position: fixed
   bottom: 0
+  width: 100%
+  height: auto
+  margin: 0 auto
   padding: 20px 0
+
+
+=grid--small
+  display: grid
+  grid-template-columns: 1fr
+  grid-template-rows: auto
+  grid-gap: 20px 10px
 
 =grid__media--lg
   display: grid
   grid-template-columns: 1fr
   grid-template-rows: auto
-  grid-gap: 10px
-  margin-bottom: 30px
+  grid-gap: 20px 10px
+  // margin-bottom: 30px
   @media (min-width: 600px)
     grid-template-columns: 1fr 1fr
   @media (min-width: 900px)
@@ -30,7 +40,7 @@
 
 =text__align--media
   text-align: center
-  @media (min-width: 600)
+  @media (min-width: 900px)
     text-align: left
 
 
@@ -45,7 +55,7 @@
 
 
 // HEADINGS ---------->>
-=heading__one
+=box__heading--one
   font-size: 1.8rem
   margin-bottom: 5vh
   @media (min-width: 600px)
@@ -53,9 +63,10 @@
   @media (min-width: 900px)
     font-size: 3rem
 
-=heading__two
+=box__heading--two
   font-size: 1.3rem
   margin-bottom: 3vh
+  padding: 8px
   @media (min-width: 600px)
     font-size: 1.8rem
   @media (min-width: 900px)
@@ -69,6 +80,16 @@
   margin-bottom: 6vh
   padding: 10px 5px
 
+
+=box__border-shadow--all
+  border: 1px solid $clr__dark
+  border-radius: 10px
+  box-shadow: 2px 2px 3px rgba(#333,.4)
+
+=box__border-shadow--corner-bo-ri
+  border-bottom: 1px solid $clr__dark
+  border-right: 1px solid $clr__dark
+  box-shadow: 2px 2px 3px rgba(#333,.4)
 
 
 =element($element)

@@ -9,29 +9,35 @@ html
 
 body
   position: relative
-  +page__full--no-cush
+  +box__full--no-cush
   +clr__combo--primary
   font-family: 'Ubuntu', Merriweather, Cormorant
 
 
 // HEADINGS ---------->>
-.heading__one
-  +heading__one
+.box__h1
+  +box__heading--one
+  +text__align--media
 
-.heading__two
-  +heading__two
+.box__h2
+  +box__heading--two
+  +box__border-shadow--all
+  +text__align--media
 
 
 
 // WRAPPERS ---------->>
 .wrap__page
-  +page__full--cush
-  padding-top: 60px
+  +grid--small
+  padding: 15vh 0
 
 .wrap__copyright
-  +page__full--cush
+  // +box__full--cush
   +box__fixed--bottom
   +clr__combo--primary
+  p
+    +box__full--cush
+    text-align: center
 
 
 
@@ -42,9 +48,22 @@ body
 .grid__box
   +column__flex
   +clr__combo--inverse
+  p
+    margin-bottom: 4vh
+    padding: 5px
+    +box__border-shadow--all
+    +text__align--media
 
 
 
 // TEXT AND FONTS ---------->>
-.text__align--media
+.text__align
   +text__align--media
+
+
+
+.box__img
+  +box__full--no-cush
+  img
+    +box__full--no-cush
+    +box__border-shadow--all

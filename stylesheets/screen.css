@@ -107,85 +107,109 @@ body {
 }
 
 /* line 18, ../sass/partials/_base.sass */
-.heading__one {
+.box__h1 {
   font-size: 1.8rem;
   margin-bottom: 5vh;
+  text-align: center;
 }
 @media (min-width: 600px) {
   /* line 18, ../sass/partials/_base.sass */
-  .heading__one {
+  .box__h1 {
     font-size: 2.5rem;
   }
 }
 @media (min-width: 900px) {
   /* line 18, ../sass/partials/_base.sass */
-  .heading__one {
+  .box__h1 {
     font-size: 3rem;
   }
 }
+@media (min-width: 900px) {
+  /* line 18, ../sass/partials/_base.sass */
+  .box__h1 {
+    text-align: left;
+  }
+}
 
-/* line 21, ../sass/partials/_base.sass */
-.heading__two {
+/* line 22, ../sass/partials/_base.sass */
+.box__h2 {
   font-size: 1.3rem;
   margin-bottom: 3vh;
+  padding: 8px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px rgba(51, 51, 51, 0.4);
+  text-align: center;
 }
 @media (min-width: 600px) {
-  /* line 21, ../sass/partials/_base.sass */
-  .heading__two {
+  /* line 22, ../sass/partials/_base.sass */
+  .box__h2 {
     font-size: 1.8rem;
   }
 }
 @media (min-width: 900px) {
-  /* line 21, ../sass/partials/_base.sass */
-  .heading__two {
+  /* line 22, ../sass/partials/_base.sass */
+  .box__h2 {
     font-size: 2.3rem;
   }
 }
-
-/* line 27, ../sass/partials/_base.sass */
-.wrap__page {
-  width: 96%;
-  height: auto;
-  margin: 0 auto;
-  padding: 0;
-  padding-top: 60px;
+@media (min-width: 900px) {
+  /* line 22, ../sass/partials/_base.sass */
+  .box__h2 {
+    text-align: left;
+  }
 }
 
-/* line 31, ../sass/partials/_base.sass */
+/* line 30, ../sass/partials/_base.sass */
+.wrap__page {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px 10px;
+  padding: 15vh 0;
+}
+
+/* line 34, ../sass/partials/_base.sass */
 .wrap__copyright {
-  width: 96%;
-  height: auto;
-  margin: 0 auto;
-  padding: 0;
   position: fixed;
   bottom: 0;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
   padding: 20px 0;
   color: #f9f9f9;
   background: #333;
 }
+/* line 38, ../sass/partials/_base.sass */
+.wrap__copyright p {
+  width: 96%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
 
-/* line 39, ../sass/partials/_base.sass */
+/* line 45, ../sass/partials/_base.sass */
 .grid__wrap {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  grid-gap: 10px;
-  margin-bottom: 30px;
+  grid-gap: 20px 10px;
 }
 @media (min-width: 600px) {
-  /* line 39, ../sass/partials/_base.sass */
+  /* line 45, ../sass/partials/_base.sass */
   .grid__wrap {
     grid-template-columns: 1fr 1fr;
   }
 }
 @media (min-width: 900px) {
-  /* line 39, ../sass/partials/_base.sass */
+  /* line 45, ../sass/partials/_base.sass */
   .grid__wrap {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
-/* line 42, ../sass/partials/_base.sass */
+/* line 48, ../sass/partials/_base.sass */
 .grid__box {
   display: flex;
   flex-direction: column;
@@ -194,14 +218,47 @@ body {
   color: #333;
   background: #f9f9f9;
 }
-
-/* line 49, ../sass/partials/_base.sass */
-.text__align--media {
+/* line 51, ../sass/partials/_base.sass */
+.grid__box p {
+  margin-bottom: 4vh;
+  padding: 5px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px rgba(51, 51, 51, 0.4);
   text-align: center;
 }
-@media (min-width: 600) {
-  /* line 49, ../sass/partials/_base.sass */
-  .text__align--media {
+@media (min-width: 900px) {
+  /* line 51, ../sass/partials/_base.sass */
+  .grid__box p {
     text-align: left;
   }
+}
+
+/* line 60, ../sass/partials/_base.sass */
+.text__align {
+  text-align: center;
+}
+@media (min-width: 900px) {
+  /* line 60, ../sass/partials/_base.sass */
+  .text__align {
+    text-align: left;
+  }
+}
+
+/* line 65, ../sass/partials/_base.sass */
+.box__img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+}
+/* line 67, ../sass/partials/_base.sass */
+.box__img img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  border: 1px solid #333;
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px rgba(51, 51, 51, 0.4);
 }
